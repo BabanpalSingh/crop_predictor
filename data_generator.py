@@ -67,82 +67,83 @@ def make_trainset_crop_id_1():
         writer.writeheader()
         rows = 1000
         for i in range(rows):
-            writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
+            writer.writerow({columns[0]: 1, columns[1][0]: 'clay',columns[1][1]:"sandy loam"
+                #red soil
                 # average temperature
                 # jan
-                columns[2]: random.normalvariate(23, 1.7),
+                columns[2]: random.randrange(15,4),
                 # feb
-                columns[3]: random.normalvariate(24, 1.7),
+                columns[3]: random.normalvariate(15, 6),
                 # mar
-                columns[4]: random.normalvariate(25, 1.7),
+                columns[4]: random.normalvariate(20, 2),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(24, 4),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(23,7 ),
                 # nov
-                columns[12]: random.normalvariate(22, 1.5),
+                columns[12]: random.normalvariate(23, 2.0),
                 # dec
-                columns[13]: random.normalvariate(22, 1.6),
+                columns[13]: random.normalvariate(16, 1.6),
                 # rainfall
                 # jan
-                columns[14]: random.normalvariate(25, 1.4),
+                columns[14]: random.normalvariate(0, 1.4),
                 # feb
-                columns[15]: random.normalvariate(25, 1.4),
+                columns[15]: random.normalvariate(30, 10),
                 # mar
-                columns[16]: random.normalvariate(25, 1.4),
+                columns[16]: random.normalvariate(15, 10),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(0, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(15, 5),
                 # dec
-                columns[25]: random.normalvariate(29, 5),
+                columns[25]: random.normalvariate(15, 5),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(9, 1),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(9, 1),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(9, 1),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(9, 1),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(9, 1),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(9, 1),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(9, 1),})
 
 def make_trainset_crop_id_2():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -150,82 +151,82 @@ def make_trainset_crop_id_2():
         writer.writeheader()
         rows = 1000
         for i in range(rows):
-            writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
+            writer.writerow({columns[0]: 1, columns[1]: 'loam and clayey',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(20, 6),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(20, 6),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(20,6 ),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(30, 2),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(15, 3),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(15,3 ),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(15, 5),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(50, 5),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(50, 5),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(50, 5),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(100, 10),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(60, 20),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(60, 20),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(9, 1),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(9, 1),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(10, 1),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(10, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(9, 1),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(9, 1),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(9, 1),})
 
 def make_trainset_crop_id_3():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -236,79 +237,79 @@ def make_trainset_crop_id_3():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_4():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -319,79 +320,79 @@ def make_trainset_crop_id_4():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_5():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -402,79 +403,79 @@ def make_trainset_crop_id_5():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_6():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -485,79 +486,79 @@ def make_trainset_crop_id_6():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_7():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -568,79 +569,79 @@ def make_trainset_crop_id_7():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_8():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -651,79 +652,79 @@ def make_trainset_crop_id_8():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_9():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -734,79 +735,79 @@ def make_trainset_crop_id_9():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_10():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -817,79 +818,79 @@ def make_trainset_crop_id_10():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_11():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -900,79 +901,79 @@ def make_trainset_crop_id_11():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_12():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -983,79 +984,79 @@ def make_trainset_crop_id_12():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_13():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1066,79 +1067,79 @@ def make_trainset_crop_id_13():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_14():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1149,79 +1150,79 @@ def make_trainset_crop_id_14():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_15():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1232,79 +1233,79 @@ def make_trainset_crop_id_15():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_16():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1315,79 +1316,79 @@ def make_trainset_crop_id_16():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_17():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1398,79 +1399,79 @@ def make_trainset_crop_id_17():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_18():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1481,79 +1482,79 @@ def make_trainset_crop_id_18():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_19():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1564,79 +1565,79 @@ def make_trainset_crop_id_19():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_20():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1647,79 +1648,79 @@ def make_trainset_crop_id_20():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 def make_trainset_crop_id_21():
     with open('test.csv', 'w', newline='') as csvfile:
@@ -1730,79 +1731,79 @@ def make_trainset_crop_id_21():
             writer.writerow({columns[0]: 1, columns[1]: 'black_soil',
                 # average temperature
                 # jan
-                columns[2]: random.randrange(1, 40),
+                columns[2]: random.normalvariate(1, 40),
                 # feb
-                columns[3]: random.randrange(1, 40),
+                columns[3]: random.normalvariate(1, 40),
                 # mar
-                columns[4]: random.randrange(10, 45),
+                columns[4]: random.normalvariate(10, 45),
                 # apr
-                columns[5]: random.randrange(20, 50),
+                columns[5]: random.normalvariate(20, 50),
                 # may
-                columns[6]: random.randrange(20, 50),
+                columns[6]: random.normalvariate(20, 50),
                 # jun
-                columns[7]: random.randrange(20, 30),
+                columns[7]: random.normalvariate(20, 30),
                 # jul
-                columns[8]: random.randrange(20, 30),
+                columns[8]: random.normalvariate(20, 30),
                 # aug
-                columns[9]: random.randrange(20, 30),
+                columns[9]: random.normalvariate(20, 30),
                 # sep
-                columns[10]: random.randrange(20, 30),
+                columns[10]: random.normalvariate(20, 30),
                 # oct
-                columns[11]: random.randrange(20, 30),
+                columns[11]: random.normalvariate(20, 30),
                 # nov
-                columns[12]: random.randrange(20, 30),
+                columns[12]: random.normalvariate(20, 30),
                 # dec
-                columns[13]: random.randrange(1, 40),
+                columns[13]: random.normalvariate(1, 40),
                 # rainfall
                 # jan
-                columns[14]: random.randrange(0, 500),
+                columns[14]: random.normalvariate(0, 500),
                 # feb
-                columns[15]: random.randrange(0, 500),
+                columns[15]: random.normalvariate(0, 500),
                 # mar
-                columns[16]: random.randrange(0, 500),
+                columns[16]: random.normalvariate(0, 500),
                 # apr
-                columns[17]: random.randrange(0, 500),
+                columns[17]: random.normalvariate(0, 500),
                 # may
-                columns[18]: random.randrange(0, 500),
+                columns[18]: random.normalvariate(0, 500),
                 # jun
-                columns[19]: random.randrange(150, 200),
+                columns[19]: random.normalvariate(150, 200),
                 # jul
-                columns[20]: random.randrange(150, 200),
+                columns[20]: random.normalvariate(150, 200),
                 # aug
-                columns[21]: random.randrange(150, 200),
+                columns[21]: random.normalvariate(150, 200),
                 # sep
-                columns[22]: random.randrange(150, 200),
+                columns[22]: random.normalvariate(150, 200),
                 # oct
-                columns[23]: random.randrange(150, 200),
+                columns[23]: random.normalvariate(150, 200),
                 # nov
-                columns[24]: random.randrange(50, 100),
+                columns[24]: random.normalvariate(50, 100),
                 # dec
-                columns[25]: random.randrange(50, 100),
+                columns[25]: random.normalvariate(50, 100),
                 # sunshine
                 # jan
-                columns[26]: random.randrange(1, 60),
+                columns[26]: random.normalvariate(1, 60),
                 # feb
-                columns[27]: random.randrange(30, 60),
+                columns[27]: random.normalvariate(30, 60),
                 # mar
-                columns[28]: random.randrange(30, 60),
+                columns[28]: random.normalvariate(30, 60),
                 # apr
-                columns[29]: random.randrange(30, 60),
+                columns[29]: random.normalvariate(30, 60),
                 # may
-                columns[30]: random.randrange(30, 60),
+                columns[30]: random.normalvariate(30, 60),
                 # jun
-                columns[31]: random.randrange(30, 60),
+                columns[31]: random.normalvariate(30, 60),
                 # jul
-                columns[32]: random.randrange(30, 60),
+                columns[32]: random.normalvariate(30, 60),
                 # aug
-                columns[33]: random.randrange(30, 60),
+                columns[33]: random.normalvariate(30, 60),
                 # sep
-                columns[34]: random.randrange(30, 60),
+                columns[34]: random.normalvariate(30, 60),
                 # oct
-                columns[35]: random.randrange(30, 60),
+                columns[35]: random.normalvariate(30, 60),
                 # nov
-                columns[36]: random.randrange(30, 60),
+                columns[36]: random.normalvariate(30, 60),
                 # dec
-                columns[37]: random.randrange(30, 60),})
+                columns[37]: random.normalvariate(30, 60),})
 
 make_trainset_crop_id_1()
 print("Successful")
